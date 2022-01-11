@@ -11,13 +11,18 @@ export default function PhoneConfirmation() {
         <img src="/images/arrow.png" alt="arrow" />
       </Link>
       <h1>Enter your Phone</h1>
-      <PhoneInput international defaultCountry="US" value={value} />
+      <PhoneInput
+        international
+        defaultCountry="US"
+        value={value}
+        onChange={setValue}
+      />
       <p>
         By enetering your number, you're aggreeing to our{" "}
         <span>Terms of Service and Privacy Policy.</span> Thanks!
       </p>
-      <Link to="/code_confirm" className="primaryBtn">
-        Next{" "}
+      <Link to="/code_confirm" className="primaryBtn d-flex align-items-center">
+        Next
         <img src="/images/nextArrowIcon.svg" className="ml-1" alt="arrow" />
       </Link>
     </div>

@@ -8,7 +8,11 @@ export default function DailyInfoCard() {
     <div className={style.dailyCard}>
       {data.map((item) => (
         <div>
-          <span className="">{item.title}</span>
+          <span className="">{item.time}</span>
+          <div>
+            <span>{item.title}</span>
+            <p>{item.description}</p>
+          </div>
         </div>
       ))}
     </div>

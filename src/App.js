@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PhoneConfirmation from "./pages/PhoneConfirmation";
 import CodeConfirm from "./pages/CodeConfirm";
 import AllowNotification from "./pages/AllowNotification";
+import AppLayout from "./pages/Layout/AppLayout";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -17,6 +19,11 @@ function App() {
           <Route path="/allow_notification" element={<AllowNotification />} />
         </Routes>
       </PlanLayout>
+      <AppLayout>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </AppLayout>
     </Router>
   );
 }

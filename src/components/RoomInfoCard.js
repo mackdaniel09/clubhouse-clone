@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import style from "../style/roomCard.module.css";
 import data from "../data/roomCard.json";
-import { BsChatDots, BsChatDotsFill, BsFillPersonFill } from "react-icons/Bs";
+import { BsChatDots, BsChatDotsFill, BsFillPersonFill } from "react-icons/bs";
 
 export default function RoomInfoCard(props) {
   return (
@@ -23,8 +23,16 @@ export default function RoomInfoCard(props) {
                     <p>
                       {person.first_name}
                       {person.last_name}
+                      <BsChatDots />
                     </p>
                   ))}
+                  <p className="d-flex align-items-center">
+                    <span className="mr-2">1.8</span>
+                    <BsFillPersonFill />
+                    <span className="mx-2"></span>
+                    <span className="mr-2">5</span>
+                    <BsChatDots />
+                  </p>
                 </div>
               </div>
             </div>

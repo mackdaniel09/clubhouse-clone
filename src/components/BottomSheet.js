@@ -29,7 +29,13 @@ export default function BottomSheet(props) {
             }}
           />
         ) : props.sheetTitle == "start room" ? (
-          ""
+          <StartRoom
+            setSheetCreateRoom={props.setSheetCreateRoom}
+            setSheetVisible={(item) => {
+              props.setSheetVisible(item);
+              props.setItemsVisible(true);
+            }}
+          />
         ) : (
           ""
         )}

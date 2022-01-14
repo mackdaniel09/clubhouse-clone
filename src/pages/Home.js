@@ -61,7 +61,7 @@ export default function Home() {
           setTimeout(() => {
             setSheetCreateRoom(item);
             setLoaderVisiblity(false);
-          }, 1500);
+          }, 1000);
         }}
       />
       <BottomSheet

@@ -1,12 +1,14 @@
 import "./App.css";
 import PlanLayout from "./pages/Layout/PlanLayout";
-import Welcome from "./pages/Welcome";
+import AppLayout from "./pages/Layout/AppLayout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Welcome from "./pages/Welcome";
 import PhoneConfirmation from "./pages/PhoneConfirmation";
 import CodeConfirm from "./pages/CodeConfirm";
 import AllowNotification from "./pages/AllowNotification";
-import AppLayout from "./pages/Layout/AppLayout";
 import Home from "./pages/Home";
+import Explore from "./pages/Explore";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       <AppLayout>
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </AppLayout>
     </Router>
